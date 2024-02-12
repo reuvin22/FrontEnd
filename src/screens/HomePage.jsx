@@ -167,7 +167,7 @@ function HomePage() {
                         {data.map((post, index) => (
                             <div key={index} className='mb-10 grid gap-1 border-2 px-10 py-5 rounded-xl'>
                                 <h1 className='text-white black font-bold text-2xl'>{post.title}</h1>
-                                <p className='text-white text-xl font-bold'>{post.content}</p>
+                                <p className='text-black text-xl font-bold'>{post.content}</p>
                                 <p class='text-slate-700 font-bold text-sm'>{post.date}</p>
                                 <div className='flex gap-5 mt-3'>
                                 <button onClick={()=>handleDelete(post.id)} className=' bg-red-500 rounded-sm h-8 w-18 px-5 font-bold text-white hover:bg-red-400'>Delete</button><button className=' bg-green-500 rounded-sm h-8 w-18 px-5 font-bold text-white hover:bg-green-400' onClick={() => updateBtn(post.id)}>Update</button>
