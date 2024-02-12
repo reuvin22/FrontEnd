@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 function Register() {
     const [user, setUser] = useState({
@@ -18,6 +18,7 @@ function Register() {
             ...prevUser, [name]:value
         }));
     }
+    const navigate = useNavigate();
     const registerUser = async () => {
         try {
             const response = await axios.post(basedUrl, user, {
@@ -26,6 +27,8 @@ function Register() {
                 }
             });
             console.log(response.data);
+            alert(response.data.message);
+            navigate('/');
         }catch(e){
             console.error(e);
             alert(e.response.data.message);
@@ -35,13 +38,6 @@ function Register() {
     const handleSubmit = e => {
         e.preventDefault();
         registerUser();
-        setUser({
-            firstName: '',
-            lastName: '',
-            email: '',
-            password: '',
-            password_confirmation: ''
-        })
     }
   return (
     <div className='flex justify-center items-center w-screen h-screen bg-gradient-to-r from-slate-400 to-blue-400'>
