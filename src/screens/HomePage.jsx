@@ -16,8 +16,8 @@ function HomePage() {
     const [data, setData] = useState([]);
     const [close, setClose] = useState(false);
     const [trigger, setTrigger] = useState(false);
-    // const basedUrl = 'http://localhost:8000/api/v1/';
-    const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/'
+    const basedUrl = 'http://localhost:8000/api/v1/';
+    //const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/'
     const token = localStorage.getItem('token');
 
     const handleInput = (e) => {

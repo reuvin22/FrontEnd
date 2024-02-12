@@ -10,8 +10,8 @@ function Register() {
         password_confirmation: ''
     });
     
-    // const basedUrl = 'http://localhost:8000/api/v1/user';
-    const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/user'
+    const basedUrl = 'http://localhost:8000/api/v1/user';
+    // const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/user'
     const handleInput = (e) => {
         const {name, value} = e.target;
         setUser(prevUser => ({

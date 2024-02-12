@@ -12,8 +12,8 @@ function Profile() {
         password_confirmation: ''
     });
     const [form, setForm] = useState(false);
-    // const basedUrl = 'http://localhost:8000/api/v1/';
-    const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/'
+    const basedUrl = 'http://localhost:8000/api/v1/';
+    //const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/'
     const navigate = useNavigate();
     const id = localStorage.getItem('id');
     const token = localStorage.getItem('token');

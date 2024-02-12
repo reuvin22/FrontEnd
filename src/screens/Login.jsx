@@ -9,8 +9,8 @@ function Login() {
         password: '',
     });
     const navigate = useNavigate();
-    // const basedUrl = 'http://localhost:8000/api/v1/login';
-    const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/login'
+    const basedUrl = 'http://localhost:8000/api/v1/login';
+    // const basedUrl = 'https://atsdevs.org/DiceBackEnd/public/api/v1/login'
     const loginForm = async () => {
         const token = localStorage.getItem('token');
         try {
