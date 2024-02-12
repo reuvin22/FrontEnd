@@ -103,10 +103,8 @@ function Profile() {
                     <input type="password" name="password" onChange={handleUpdate} placeholder="Change Password" className='pl-3 h-8 w-[50%]'/>
                     <input type="password" name="password_confirmation" onChange={handleUpdate} placeholder="Confirm Password" className='pl-3 h-8 w-[50%]'/>
                         <button type="submit" className='border-2 w-20 hover:bg-green-500 text-white'>Update</button>
+                        <h1 onClick={handleForm} className='cursor-pointer font-bold text-white hover:text-red-700'>Close</h1>
                 </form>
-                <div className='flex justify-center mt-5'>
-                <button className='border-2 w-20 hover:bg-red-500 text-white' onClick={handleForm}>Close</button>
-                </div>
             </div>
             <div className='h-[80%] w-[90%] sm:w-[500px] flex flex-row-reverse mb-10'>
                 <div className='flex gap-10 sm:gap-2 sm:mr-5 items-center'>
